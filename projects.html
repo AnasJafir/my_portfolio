@@ -210,6 +210,41 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* Add this to your existing CSS code */
+        @media (max-width: 768px) {
+          .project-description {
+            margin: 1rem 0;
+            font-size: 1rem;
+          }
+          .project-links {
+            flex-direction: column;
+            align-items: center;
+          }
+          .project-btn {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+          }
+        }
+        .project-description {
+          margin: 1.5rem 0;
+          font-size: 1.2rem;
+          color: var(--secondary);
+        }
+        
+        .project-links {
+          display: flex;
+          gap: 1rem;
+          margin-top: 1.5rem;
+        }
+        
+        .project-btn {
+          padding: 0.5rem 1rem;
+          border-radius: 6px;
+          text-decoration: none;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          font-size: 1.2rem;
+        }
     </style>
 </head>
 <body>

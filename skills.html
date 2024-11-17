@@ -166,6 +166,52 @@ body {
 .expanded .expand-icon {
   transform: rotate(180deg);
 }
+/* Add this to your existing CSS code */
+@media (max-width: 768px) {
+  .skill-card {
+    margin-bottom: 2rem;
+    flex-basis: 100%;
+  }
+  .skill-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-title {
+    font-size: 1.2rem;
+  }
+  .skill-content {
+    padding: 1rem;
+  }
+}
+.skill-card {
+  margin-bottom: 2rem;
+  flex-basis: 30%;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skill-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748;
+  margin: 0;
+}
+
+.skill-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding: 1.5rem;
+}
 
 @keyframes skillFadeIn {
   from {
